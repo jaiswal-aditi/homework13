@@ -1,10 +1,21 @@
+# Compiler
 CC = g++
 
-election: election.cpp
-	g++ election.cpp -o election
+# Source and output
+SRC = election.cpp
+OUT = election
 
+# Default target
+all: $(OUT)
+
+# Build target
+$(OUT): $(SRC)
+	$(CC) $(SRC) -o $(OUT)
+
+# Clean up build and output files
 clean:
-	rm election 
+	rm -f $(OUT) output.txt
 
-test: election  
+# Test using test.sh
+test: $(OUT)
 	bash test.sh

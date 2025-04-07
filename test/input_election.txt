@@ -1,10 +1,5 @@
-Peter
-30
-Roy
-20
-Ali
-60
-Hales
-40
-John
-10
+John Smith 120
+Emma Lee 150
+Ali Khan 100
+Lily Chen 150
+Ben Jones 80
